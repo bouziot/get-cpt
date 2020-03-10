@@ -17,8 +17,7 @@
 - numpy `1.14` or newer
 - matplotlib `2.2.2` or newer
 
-Tested in two environments: (py 3.7|np 1.18.1|mpl 3.1.3) and (py 3.6|np 1.14.2|mpl 2.2.2)
-Also uses `urllib` for the url handles.
+Tested in two environments: (py 3.7|np 1.18.1|mpl 3.1.3) and (py 3.6|np 1.14.2|mpl 2.2.2). Also uses `urllib` for the url handles.
 
 **Howto:**
 Instructions are provided in the relevant Jupyter Notebook tutorial.
