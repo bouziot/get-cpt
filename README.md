@@ -13,10 +13,10 @@
 - To control and simplify the complexity `matplotlib` introduces with its multiple classes of colormaps, but offer added functionality to the user as well, in case he/she wants hex color lists, fewer colors, `ListedColormap` objects instead of `LinearSegmented` ones etc.
 
 **Requirements:**
-- python `3.7` or newer
-- numpy `1.18.1` or newer
-- matplotlib `3.1.3` or newer
-
+- python `3.6` or newer
+- numpy `1.14` or newer
+- matplotlib `2.2.2` or newer
+Tested in two environments: (py 3.7|np 1.18.1|mpl 3.1.3) and (py 3.6|np 1.14.2|mpl 2.2.2)
 Also uses `urllib` for the url handles.
 
 **Howto:**
