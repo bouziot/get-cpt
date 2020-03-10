@@ -24,7 +24,7 @@ Instructions are provided in the relevant Jupyter Notebook tutorial.
 
 **Closing remarks:**
 - Every modification or enhancement/redevelopment of the code is welcome.
--If you would like to use this module to your work, please refer to its Zenodo DOI (10.5281/zenodo.3703160) (https://zenodo.org/record/3703160#.XmfGXqhKiUk), as well as the original pycpt package (https://github.com/j08lue/pycpt). 
+- If you would like to use this module to your work, please refer to its Zenodo DOI (10.5281/zenodo.3703160)(https://zenodo.org/record/3703160#.XmfGXqhKiUk), as well as the original pycpt package (https://github.com/j08lue/pycpt). 
 
 
 [1]: https://en.wikipedia.org/wiki/CPT_(file_format)
