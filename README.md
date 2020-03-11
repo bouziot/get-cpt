@@ -4,7 +4,7 @@
 
 **The goal:** To provide an easy, unified interface to load external and custom colormaps in `matplotlib`. The focus is on `.cpt` files, which are a common standard in external colormaps [[1]] and are frequently featured in colormap repos such as cpt-city [[2]].
 
-**The background:** Multiple tools to load `.cpt` files already exist (e.g. see here: [[3]],[[4]]). The most encapsulated effort is `pycpt` [[5]], a well-written package that is able to load `.cpt` files from multiple sources. However, this package was originally made for python 2.x and has certain limitations and, sometimes, added complexity for many user groups. 
+**The background:** Multiple tools to load `.cpt` files already exist (e.g. see here: [[3]],[[4]],[[5]]). The most encapsulated effort is `pycpt` [[6]], a well-written package that is able to load `.cpt` files from multiple sources. However, this package was originally made for python 2.x and has certain limitations and, sometimes, added complexity for many user groups. 
 
 **The functionality:**
 - To create a simple, flexible interface where `.cpt` files can be loaded, building from `pycpt`.
@@ -31,4 +31,5 @@ Instructions are provided in the relevant Jupyter Notebook tutorial.
 [2]: http://soliton.vm.bytemark.co.uk/pub/cpt-city/
 [3]: https://stackoverflow.com/questions/48322741/is-there-a-way-to-save-a-custom-matplotlib-colorbar-to-use-elsewhere
 [4]: https://scipy-cookbook.readthedocs.io/items/Matplotlib_Loading_a_colormap_dynamically.html
-[5]: https://github.com/j08lue/pycpt/blob/master/pycpt/load.py
+[5]: https://github.com/shaharkadmiel/cmaptools
+[6]: https://github.com/j08lue/pycpt/blob/master/pycpt/load.py
