@@ -45,8 +45,7 @@ def get_cmap(cpt_path, name=None, method='cdict', N=None):
         allows you to control the number of colors to sample from. Check gmtColormap_openfile for more info.
 
     N: int, optional
-        the number of colors in the colormap to be returned. Can define the granularity of the returned colormap.
-        Only useful when method='list'
+        the number of colors in the colormap to be returned. Defines the granularity of the returned colormap.
     """
     # first get name
     if name is None:
@@ -125,7 +124,7 @@ def gmtColormap_openfile(cptf, name=None, method='cdict', N=None, ret_cmap_type=
     If method = 'cdict', generates the LinearSegmentedColormap using a color dictionary (cdict), disregarding any value in N.
     If method = 'list', generates the LinearSegmentedColor using the .from_list() method, passing a list of (value, (r,g,b)) tuples obtained from the cpt file. This allows the selection of colormap resolution by the user, using the N parameter
 
-    N : int, the number of colors in the colormap. Only useful when method='list'.
+    N : int, the number of colors in the colormap.
 
     ret_cmap_type: str, the type of matplotlib cmap object to be returned. Accepts either 'LinearSegmented', which returns a matplotlib.colors.LinearSegmentedColormap, or 'Listed', which returns a ListedColormap
     In case 'Listed' is selected, the method argument from the user is ignored and method is set to 'list' ('Linear' doesn't work with 'cdict').
@@ -239,7 +238,7 @@ def gmtColormap_openfile(cptf, name=None, method='cdict', N=None, ret_cmap_type=
             blue.append([xNorm[i],b[i],b[i]])
         cdict = dict(red=red,green=green,blue=blue)
         #return cdict
-        return mcolors.LinearSegmentedColormap(name=name,segmentdata=cdict)
+        return mcolors.LinearSegmentedColormap(name=name, segmentdata=cdict, N=N)
 
     elif method == 'list' and ret_cmap_type == 'LinearSegmented':
         # generate list of values in the form of (value, c)
